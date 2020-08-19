@@ -1,0 +1,19 @@
+/* General Styles */
+
+
+/*Top Navbar */
+#top-nav{
+  margin-right:5%;
+}
+
+.nav-items{
+  padding:0.5rem;
+  border-right:1px solid;
+}
+
+
+/* Footer */
+.footer{
+  positon:fixed !important;
+  bottom:0 !important;
+}
