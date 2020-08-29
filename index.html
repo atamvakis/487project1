@@ -18,74 +18,335 @@
   <body>
 
     <!-- top navbar -->
-    <div class="container-fluid" id="lt-blue">
+    <div class="container-fullwidth" id="lt-blue">
       <div class="d-flex justify-content-end" id="top-nav">
-        <div class="nav-items">
-          <a href="#">MINI of Raleigh</a>
+        <div class="nav-items item-border">
+          <a class="white-text" href="#">MINI of Raleigh</a>
+        </div>
+        <div class="nav-items item-border">
+          <a href="#">
+            <i class="sprite sprite-question"></i>
+          </a>
         </div>
         <div class="nav-items">
-          <a href="#">Q</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">s</a>
+          <a href="#">
+            <i class="sprite sprite-settings-gear"></i>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- Dark Blue Navbar -->
-    <div class="container-fluid" id="dk-blue">
+    <div class="container-fullwidth" id="dk-blue">
+      <div class="sprite sprite-background"></div>
       <div class="d-flex justify-content-center" id="icon-nav">
-        <div class="nav-items">
-          <a href="#">A</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">B</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">C</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">D</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">E</a>
-        </div>
-        <div class="nav-items">
-          <a href="#">F</a>
-        </div>
+        <a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-dashboard-green">
+              <i class="hover-icons sprite sprite-dashboard-blue">
+              </i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-people-green">
+              <i class="hover-icons sprite sprite-people-blue"></i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-messages-green">
+              <i class="hover-icons sprite sprite-messages-blue"></i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-tag-green">
+              <i class="hover-icons sprite sprite-tag-blue"></i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-paper-green">
+              <i class="hover-icons sprite sprite-paper-blue"></i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a><a href="#">
+          <div class="nav-items">
+            <i class="normal-icons sprite sprite-bars-green">
+              <i class="hover-icons sprite sprite-bars-blue"></i>
+            </i>
+            <i class="sprite sprite-marker"></i>
+          </div>
+        </a>
       </div>
     </div>
 
     <!-- Dashboard and form entry-->
+    <div id="spacer"></div>
     <div class="container">
       <div class="d-flex justify-content-between" id="dashboard">
         <div class="nav-items">
-          <h4>Dashboard</h4>
+          <h4 class="white-text">Dashboard</h4>
         </div>
         <div class="nav-items">
-          <input type="text" results="0">
+          <div class="search">
+            <input id="search-bar" type="text" results="0">
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="container" id="white-box">
 
       <div class="row" id="announcements">
-        <div class="col-md-2">ANNOUNCEMENTS</div>
-        <div class="col-md-9">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
-        <div class="col-md-1">icons go brr</div>
+        <div id="orange-text" class="col-md-2">ANNOUNCEMENTS</div>
+        <div class="dark-gray-text col-md-9">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
+        <div class="col-md-1">
+          <div class="d-flex justify-content-between" id="arrows">
+            <div class="nav-items">
+              <a href="#">
+                <i class="sprite sprite-left-arrow"></i>
+              </a>
+            </div>
+            <div class="nav-items">
+              <a href="#">
+                <i class="sprite sprite-right-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row" id="main-content">
-        <div class="col-md-5"></div>
-        <div class="col-md-7"></div>
+        <div class="col-md-5">
+          <div class="row" id="tasks">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <h5 class="blue-text">Tasks</h5>
+              </div>
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-gray-settings"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="number-one">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <i class="sprite sprite-number-1"></i>
+              </div>
+              <div class="nav-items">
+                <p class="blue-text">Welcome Contacts</p>
+              </div>
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-tasks-32"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="number-two">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <i class="sprite sprite-number-2"></i>
+              </div>
+              <div class="nav-items">
+                <p class="blue-text">Provide Responses</p>
+              </div>
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-tasks-36"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="number-three">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <i class="sprite sprite-number-3"></i>
+              </div>
+              <div class="nav-items">
+                <p class="blue-text">Review Activity</p>
+              </div>
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-tasks-36"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="number-four">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <i class="sprite sprite-number-4"></i>
+              </div>
+              <div class="nav-items">
+                <p class="blue-text">Reach Out</p>
+              </div>
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-tasks-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="reccomendations">
+            <h5 class="blue-text">Recomendations</h5>
+          </div>
+          <div class="row" id="rec-number-one">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-rec-paper"></i>
+                </a>
+              </div>
+              <div class="nav-items">
+                <p class="dark-gray-text">7 Steps to Getting More Fans</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="rec-number-two">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-rec-paper"></i>
+                </a>
+              </div>
+              <div class="nav-items">
+                <p class="dark-gray-text">Increase Traction with More Interaction</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="rec-number-three">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-rec-check"></i>
+                </a>
+              </div>
+              <div class="nav-items">
+                <p class="dark-gray-text">Creating a Promotion</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="rec-number-four">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-rec-lightbulb"></i>
+                </a>
+              </div>
+              <div class="nav-items">
+                <p class="dark-gray-text">Share More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="row">
+            <h5 class="blue-text">Analytics</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="d-flex justify-content-between" id="activity">
+                <div class="nav-items">
+                  <p class="gray-text">ACTIVITY</p>
+                </div>
+                <div class="nav-items">
+                  <select name="dropdown" id="dropdown">
+                      <option value="month-one">6/28/11 - 7/21/11</option>
+                      <option value="month-two">7/22/11 - 8/26/11</option>
+                      <option value="month-three">8/27/11 - 9/28/11</option>
+                      <option value="month-four">9/29/11 - 10/30/11</option>
+                    </select>
+                </div>
+              </div>
+              <img src="img/activity-graph.png" alt="Image of Activity Graph" width="436" height="213">
+            </div>
+            <div class="col-md-3">
+              <p class="gray-text">CHANNELS</p>
+              <img src="img/top-pie-chart.png" alt="Chart of Channels Data" width="100" height="100">
+              <p class="gray-text">REFERRALS</p>
+              <img src="img/bottom-pie-chart.png" alt="Chart of Referrals Data" width="100" height="100">
+            </div>
+          </div>
+
+          <div class="row" id="social-checks">
+            <input type="checkbox" id="facebook" name="facebook"
+                   checked>
+            <label id="facebook-label" class="white-text" for="facebook">Facebook</label>
+            <input type="checkbox" id="twitter" name="twitter"
+                   checked>
+            <label id="twitter-label" class="white-text" for="twitter">Twitter</label>
+            <input type="checkbox" id="foursquare" name="foursquare">
+            <label id="foursquare-label" class="white-text" for="foursquare">Foursquare</label>
+            <input type="checkbox" id="google" name="google">
+            <label id="google-label" class="white-text" for="google">Google +</label>
+          </div>
+
+          <div class="row" id="contacts">
+            <div class="d-flex justify-content-around">
+              <div class="nav-items" id="left-contacts">
+                <h5>75 Contacts</h5>
+                <p>4 Influencers</p>
+              </div>
+              <div class="nav-items" id="right-contacts">
+                <h5>17 Customers</h5>
+                <p>0 Influencers</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="did-you-know-box">
+            <div class="d-flex justify-content-between">
+              <div class="nav-items" id="arrow-left">
+                <a href="#">
+                  <i class="sprite sprite-did-you-know-left"></i>
+                </a>
+              </div>
+              <div class="nav-items" id="did-you-know">
+                <p>Did You Know?</p>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+              </div>
+              <div class="nav-items" id="arrow-right">
+                <a href="#">
+                  <i class="sprite sprite-did-you-know-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="row" id="promo">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
+      <div class="flex-row d-flex align-items-end" id="promo">
+        <div class="col-md-4">
+          <a href="#">
+            <i class="sprite sprite-promo-left"></i>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <i class="sprite sprite-promo-middle"></i>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <i class="sprite sprite-promo-right"></i>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -96,14 +357,14 @@
 
           <div class="col-md-3">
             <div class="d-flex justify-content-around" id="footer-left">
-              <div class="nav-items">
-                <a href="#">Tutorials</a>
+              <div class="nav-items item-border">
+                <a class="footer-text" href="#">Tutorials</a>
               </div>
-              <div class="nav-items">
-                <a href="#">Support</a>
+              <div class="nav-items item-border">
+                <a class="footer-text" href="#">Support</a>
               </div>
-              <div class="nav-items">
-                <a href="#">Blog</a>
+              <div class="nav-items divider-border">
+                <a class="footer-text" href="#">Blog</a>
               </div>
             </div>
           </div>
@@ -111,21 +372,15 @@
           <div class="col-md-5">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
-                <p>Ariel Winter likes your Win A Cooper Sweepstakes.</p>
+                <a class="footer-links footer-text" href="#">Ariel Winter</a>
+                <p class="footer-text">likes your</p>
+                <a class="footer-links footer-text" href="#">Win A Cooper Sweepstakes</a>
+                <p class="footer-text">Promotion</p>
               </div>
-              <div class="nav-items">
-                <a href="#">Up</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2">
-            <div class="d-flex justify-content-center">
-              <div class="nav-items">
-                <a href="#">Avi</a>
-              </div>
-              <div class="nav-items">
-                <a href="#">Logout</a>
+              <div class="nav-items divider-border">
+                <a href="#">
+                  <i class="sprite sprite-footer-up"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -133,16 +388,37 @@
           <div class="col-md-2">
             <div class="d-flex justify-content-center">
               <div class="nav-items">
-                <a href="#">1</a>
+                <a href="#">
+                  <i class="sprite sprite-footer-avi"></i>
+                </a>
+              </div>
+              <div class="nav-items divider-border">
+                <a class="footer-links" href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="d-flex justify-content-center">
+              <div class="nav-items">
+                <a href="#">
+                  <i class="sprite sprite-footer-fb"></i>
+                </a>
               </div>
               <div class="nav-items">
-                <a href="#">2</a>
+                <a href="#">
+                  <i class="sprite sprite-footer-twitter"></i>
+                </a>
               </div>
               <div class="nav-items">
-                <a href="#">3</a>
+                <a href="#">
+                  <i class="sprite sprite-footer-social3"></i>
+                </a>
               </div>
-              <div class="nav-items">
-                <a href="#">4</a>
+              <div class="nav-items divider-border">
+                <a href="#">
+                  <i class="sprite sprite-footer-youtube"></i>
+                </a>
               </div>
             </div>
           </div>
