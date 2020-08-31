@@ -42,50 +42,31 @@
       <div class="d-flex justify-content-center" id="icon-nav">
         <a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-dashboard-green">
-              <i class="hover-icons sprite sprite-dashboard-blue">
-              </i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="dashboard-icon"></div>
           </div>
         </a>
         <a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-people-green">
-              <i class="hover-icons sprite sprite-people-blue"></i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="people-icon"></div>
           </div>
         </a>
         <a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-messages-green">
-              <i class="hover-icons sprite sprite-messages-blue"></i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="messages-icon"></div>
           </div>
         </a>
         <a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-tag-green">
-              <i class="hover-icons sprite sprite-tag-blue"></i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="tag-icon"></div>
           </div>
         </a>
         <a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-paper-green">
-              <i class="hover-icons sprite sprite-paper-blue"></i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="paper-icon"></div>
           </div>
         </a><a href="#">
           <div class="nav-items">
-            <i class="normal-icons sprite sprite-bars-green">
-              <i class="hover-icons sprite sprite-bars-blue"></i>
-            </i>
-            <i class="sprite sprite-marker"></i>
+            <div class="bars-icon"></div>
           </div>
         </a>
       </div>
@@ -93,7 +74,7 @@
 
     <!-- Dashboard and form entry-->
     <div id="spacer"></div>
-    <div class="container">
+    <div class="container" id="green-bar">
       <div class="d-flex justify-content-between" id="dashboard">
         <div class="nav-items">
           <h4 class="white-text">Dashboard</h4>
@@ -110,9 +91,9 @@
     <div class="container" id="white-box">
 
       <div class="row" id="announcements">
-        <div id="orange-text" class="col-md-2">ANNOUNCEMENTS</div>
-        <div class="dark-gray-text col-md-9">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
-        <div class="col-md-1">
+        <div id="orange-text" class="box-border col-md-2">ANNOUNCEMENTS</div>
+        <div id="announcements-text" class="box-border dark-gray-text col-md-9">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
+        <div id="announcements-arrows" class="box-border col-md-1">
           <div class="d-flex justify-content-between" id="arrows">
             <div class="nav-items">
               <a href="#">
@@ -129,20 +110,15 @@
       </div>
 
       <div class="row" id="main-content">
-        <div class="col-md-5">
+        <div class="box-border col-md-5">
           <div class="row" id="tasks">
-            <div class="d-flex justify-content-between">
-              <div class="nav-items">
-                <h5 class="blue-text">Tasks</h5>
-              </div>
-              <div class="nav-items">
-                <a href="#">
-                  <i class="sprite sprite-gray-settings"></i>
-                </a>
-              </div>
-            </div>
+            <h3 class="blue-text-title">Tasks</h3>
+            <a href="#">
+              <i id="gray-settings" class="sprite sprite-gray-settings"></i>
+            </a>
+
           </div>
-          <div class="row" id="number-one">
+          <div class="row numbered-tasks" id="number-one">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
                 <i class="sprite sprite-number-1"></i>
@@ -157,7 +133,7 @@
               </div>
             </div>
           </div>
-          <div class="row" id="number-two">
+          <div class="row numbered-tasks" id="number-two">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
                 <i class="sprite sprite-number-2"></i>
@@ -172,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="row" id="number-three">
+          <div class="row numbered-tasks" id="number-three">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
                 <i class="sprite sprite-number-3"></i>
@@ -204,7 +180,7 @@
           </div>
 
           <div class="row" id="reccomendations">
-            <h5 class="blue-text">Recomendations</h5>
+            <h3 class="blue-text-title">Recommendations</h3>
           </div>
           <div class="row" id="rec-number-one">
             <div class="d-flex justify-content-between">
@@ -214,10 +190,12 @@
                 </a>
               </div>
               <div class="nav-items">
+                <p class="tiny-text">Article</p>
                 <p class="dark-gray-text">7 Steps to Getting More Fans</p>
               </div>
             </div>
           </div>
+          <hr>
           <div class="row" id="rec-number-two">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
@@ -226,10 +204,12 @@
                 </a>
               </div>
               <div class="nav-items">
+                <p class="tiny-text">Article</p>
                 <p class="dark-gray-text">Increase Traction with More Interaction</p>
               </div>
             </div>
           </div>
+          <hr>
           <div class="row" id="rec-number-three">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
@@ -238,10 +218,12 @@
                 </a>
               </div>
               <div class="nav-items">
+                <p class="tiny-text">Checklist</p>
                 <p class="dark-gray-text">Creating a Promotion</p>
               </div>
             </div>
           </div>
+          <hr>
           <div class="row" id="rec-number-four">
             <div class="d-flex justify-content-between">
               <div class="nav-items">
@@ -250,19 +232,20 @@
                 </a>
               </div>
               <div class="nav-items">
+                <p class="tiny-text">Tip</p>
                 <p class="dark-gray-text">Share More</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="box-border col-md-7">
           <div class="row">
-            <h5 class="blue-text">Analytics</h5>
+            <h3 class="blue-text-title">Analytics</h3>
           </div>
           <div class="row">
-            <div class="col-md-9">
-              <div class="d-flex justify-content-between" id="activity">
+            <div class="col-md-9" id="activity">
+              <div class="d-flex justify-content-between">
                 <div class="nav-items">
                   <p class="gray-text">ACTIVITY</p>
                 </div>
@@ -275,7 +258,7 @@
                     </select>
                 </div>
               </div>
-              <img src="img/activity-graph.png" alt="Image of Activity Graph" width="436" height="213">
+              <img id="activity-graph" src="img/activity-graph.png" alt="Image of Activity Graph" width="436" height="213">
             </div>
             <div class="col-md-3">
               <p class="gray-text">CHANNELS</p>
@@ -285,6 +268,7 @@
             </div>
           </div>
 
+          <div class="social-spacer"></div>
           <div class="row" id="social-checks">
             <input type="checkbox" id="facebook" name="facebook"
                    checked>
@@ -297,28 +281,41 @@
             <input type="checkbox" id="google" name="google">
             <label id="google-label" class="white-text" for="google">Google +</label>
           </div>
+          <div class="social-spacer"></div>
 
+        <div class="box-border">
           <div class="row" id="contacts">
-            <div class="d-flex justify-content-around">
-              <div class="nav-items" id="left-contacts">
-                <h5>75 Contacts</h5>
-                <p>4 Influencers</p>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="nav-items contacts-box">
+                <img src="img/green-profile.png" alt="Green Outline of Person" width="210" height="66">
+                <div id="left-contacts">
+                  <h5>75 CONTACTS</h5>
+                  <p>4 INFLUENCERS</p>
+                </div>
+                <img src="img/green-contacts-graph.png" alt="Chart of Contact Info (Green)" width="200" height="100">
               </div>
-              <div class="nav-items" id="right-contacts">
-                <h5>17 Customers</h5>
-                <p>0 Influencers</p>
+              <div class="nav-items contacts-box">
+                <img src="img/orange-profile.png" alt="Orange Outline of Person" width="210" height="66">
+                <div id="right-contacts">
+                  <h5>17 CUSTOMERS</h5>
+                  <p>0 INFLUENCERS</p>
+                </div>
+                <img src="img/orange-contacts-graph.png" alt="Chart of Contact Info (Orange)" width="200" height="100">
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="box-border">
           <div class="row" id="did-you-know-box">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center justify-content-between">
               <div class="nav-items" id="arrow-left">
                 <a href="#">
                   <i class="sprite sprite-did-you-know-left"></i>
                 </a>
               </div>
               <div class="nav-items" id="did-you-know">
-                <p>Did You Know?</p>
+                <p>DID YOU KNOW?</p>
                 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
               </div>
               <div class="nav-items" id="arrow-right">
@@ -331,7 +328,7 @@
         </div>
       </div>
 
-      <div class="flex-row d-flex align-items-end" id="promo">
+      <div class="row d-flex align-items-end" id="promo">
         <div class="col-md-4">
           <a href="#">
             <i class="sprite sprite-promo-left"></i>
@@ -349,21 +346,22 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container-fullwidth">
+        <div class="row" id="footer-row">
 
           <div class="col-md-3">
             <div class="d-flex justify-content-around" id="footer-left">
-              <div class="nav-items item-border">
+              <div class="nav-items item-border-footer">
                 <a class="footer-text" href="#">Tutorials</a>
               </div>
-              <div class="nav-items item-border">
+              <div class="nav-items item-border-footer">
                 <a class="footer-text" href="#">Support</a>
               </div>
-              <div class="nav-items divider-border">
+              <div class="nav-items item-border-footer">
                 <a class="footer-text" href="#">Blog</a>
               </div>
             </div>
@@ -377,7 +375,7 @@
                 <a class="footer-links footer-text" href="#">Win A Cooper Sweepstakes</a>
                 <p class="footer-text">Promotion</p>
               </div>
-              <div class="nav-items divider-border">
+              <div class="nav-items item-border-footer">
                 <a href="#">
                   <i class="sprite sprite-footer-up"></i>
                 </a>
@@ -392,7 +390,7 @@
                   <i class="sprite sprite-footer-avi"></i>
                 </a>
               </div>
-              <div class="nav-items divider-border">
+              <div class="nav-items item-border-footer">
                 <a class="footer-links" href="#">Logout</a>
               </div>
             </div>
@@ -415,7 +413,7 @@
                   <i class="sprite sprite-footer-social3"></i>
                 </a>
               </div>
-              <div class="nav-items divider-border">
+              <div class="nav-items item-border">
                 <a href="#">
                   <i class="sprite sprite-footer-youtube"></i>
                 </a>

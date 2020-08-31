@@ -4,11 +4,14 @@
 }
 
 .item-border{
-  border-right:0.5px solid;
+  border-right:0.5px solid lightgray;
 }
 
-.divider-border{
-  border-right:1px solid;
+.box-border{
+  border-width:1px;
+  border-color:lightgray;
+  border-style:solid;
+  border-radius:2px;
 }
 
 a{
@@ -34,62 +37,158 @@ a:hover{
 
 .dark-gray-text{
   color:#777777;
+  font-size:18px;
+  font-weight:450;
+}
+
+.tiny-text{
+  color:#777777;
+  font-size:13px;
+  margin-bottom:-3px;
+}
+
+.blue-text-title{
+  color:#2498f4;
+  padding-top:10px;
+  padding-left:15px;
+  padding-bottom:10px;
+  font-weight:500;
 }
 
 .blue-text{
   color:#2498f4;
+  font-size:20px;
+  font-weight:450;
+}
+
+hr{
+  margin:0px;
+  border-style:dotted;
 }
 
 
 /*Top Navbar */
 #top-nav{
-  padding-right:5%;
+  padding-right:10%;
   background-color:#2292eb;
 }
 
 /* Icon Navbar */
 .sprite-background{
   position:absolute;
+  background-repeat: space;
+  background-color:#134670;
 }
 
 #icon-nav{
   position:relative;
 }
 
-.hover-icons{
-  position:absolute;
-  z-index:-1;
+.dashboard-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/dashboard-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
 }
 
-.hover-icons:hover{
-  z-index:10;
+.dashboard-icon:hover{
+  background-image: url(../img/nav/dashboard-blue.png);
+  background-repeat: no-repeat;
 }
 
-.normal-icons:hover{
-  z-index:-10;
+.people-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/people-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
 }
 
+.people-icon:hover{
+  background-image: url(../img/nav/people-blue.png);
+  background-repeat: no-repeat;
+}
+
+.messages-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/messages-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
+}
+
+.messages-icon:hover{
+  background-image: url(../img/nav/messages-blue.png);
+  background-repeat: no-repeat;
+}
+
+.tag-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/tag-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
+}
+
+.tag-icon:hover{
+  background-image: url(../img/nav/tag-blue.png);
+  background-repeat: no-repeat;
+}
+
+.paper-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/paper-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
+}
+
+.paper-icon:hover{
+  background-image: url(../img/nav/paper-blue.png);
+  background-repeat: no-repeat;
+}
+
+.bars-icon{
+  width:70px;
+  height:70px;
+  background-image: url(../img/nav/bars-green.png);
+  background-repeat: no-repeat;
+  margin:8px;
+}
+
+.bars-icon:hover{
+  background-image: url(../img/nav/bars-blue.png);
+  background-repeat: no-repeat;
+}
 
 .sprite-marker{
-  display:none !important;
+  display:none;
 }
 
-.sprite-marker:active{
+.sprite-marker:hover{
   display:inline !important;
 }
 
 /* Dashboard and Search Box */
 #spacer{
   width:200px;
-  height:30px;
+  height:3px;
   display:inline-block;
+}
+
+#green-bar{
+   width:85%;
 }
 
 #dashboard{
   background-color:#33cc66;
   border-radius:8px;
   margin:10px;
+  margin-top:0px;
   position:relative;
+  padding-left:10px;
+  padding-top:5px;
 }
 
 #search-bar{
@@ -102,45 +201,81 @@ a:hover{
 }
 
 /*Announcements*/
-#announcements{
-  padding:5px;
+#orange-text{
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-right:15px;
+}
+
+#announcements-arrows{
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:2px;
+}
+
+#announcements-text{
+  padding-top:15px;
+  padding-bottom:5px;
+  font-size:15px;
 }
 
 /*Main Content*/
-#main-content{
-  padding:5px;
+#white-box{
+  width:80%;
 }
 
-#white-box{
-  padding:10px;
-  border-width:1px;
-  border-style:solid;
-  border-color:lightgray;
-  border-radius:3px;
-  width:80%;
+#gray-settings{
+  position:absolute;
+  right:10px;
+  top:15px;
+}
+
+.sprite-tasks-32, .sprite-tasks-36, .sprite-tasks-3{
+  position:absolute;
+  right:10px;
+}
+
+.numbered-tasks{
+  border-bottom:1px solid lightgray;
+  padding-bottom:0px;
+}
+
+#reccomendations{
+  border-top:1px solid lightgray;
 }
 
 /*Activity*/
 #activity{
-  border-right:1px;
-  border-right-style:solid;
+  border-right:1px solid lightgray;
+  padding-right:1px;
 }
 
-#left-contacts, #right-contacts{
-  text-align:center;
+#dropdown{
+  color:#777777;
+  border-color:lightgray;
+  border-radius:3px;
+}
+
+/*Social Media Checkboxes*/
+.social-spacer{
+  width:200px;
+  height:15px;
+  display:inline-block;
+}
+
+#social-checks{
+  position:relative;
+  left:75px;
+  margin-bottom:10px;
 }
 
 #facebook, #twitter, #foursquare, #google{
   margin:10px;
-  background-color: white;
-  color:orange;
   transform:scale(1.5, 1.5);
 }
 
-
 #facebook-label, #twitter-label, #foursquare-label, #google-label{
   padding:0px 4px 0px 4px;
-
   border-radius:5px;
 }
 
@@ -160,21 +295,52 @@ a:hover{
   background-color:#31cc66;
 }
 
+/*Contacts*/
+#left-contacts, #right-contacts{
+  text-align:center;
+  color:white;
+  background-color:#2498f4;
+}
+
+#contacts{
+  justify-content:space-around;
+}
+
+.contacts-box{
+  border:0.5px solid lightgray;
+  border-radius:5px;
+  border-top:none;
+  margin: 15px 0px 15px 0px;
+}
+
 /*Did you Know Box*/
 #did-you-know-box{
   background-color:#2498f4;
+  border-radius:3px;
   margin:10px;
 }
 
 #did-you-know{
   color:white;
+  font-size:15px;
+  padding-top:20px;
+}
+
+#arrow-left{
+  padding-left:0px;
+}
+
+#arrow-right{
+  padding-right:0px;
 }
 
 /*Promo Box*/
 #promo{
-  background-color:#2498f4 !important;
+  background-color:#2498f4;
   padding:10px;
   padding-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 
@@ -186,7 +352,10 @@ a:hover{
   margin-top:8px;
   background-color: #f7f7f7;
   border-top:2px;
-  border-top-color:#e9e9e9;
+  border-top-color:gray;
+  padding-right:10%;
+  padding-left:10%;
+  padding-top:10px;
 }
 
 .footer-text{
@@ -198,6 +367,11 @@ a:hover{
   color:#2498f2;
 }
 
+.item-border-footer{
+  padding-right:15px;
+  border-right:0.5px solid lightgray;
+}
+
 /* Sprite Sheet */
 .sprite {
     background-image: url(../img/spritesheet.png);
@@ -206,7 +380,7 @@ a:hover{
 }
 
 .sprite-background {
-    width: 1200px;
+    width: 3000px;
     height: 110px;
     background-position: -5px -5px;
 }
