@@ -61,6 +61,22 @@ a:hover{
   font-weight:450;
 }
 
+.acme-news-ticker-label{
+  color: orange;
+  background-color:white;
+  border:2px;
+  border-color:gray;
+}
+
+.acme-news-ticker{
+  border-color:lightgrey;
+  color:gray;
+}
+
+.channels, .referrals{
+  border-bottom: none;
+}
+
 hr{
   margin:0px;
   border-style:dotted;
